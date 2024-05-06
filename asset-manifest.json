@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/rkiran16/3d/static/css/main.9a6bd019.css",
+    "main.js": "/rkiran16/3d/static/js/main.2793496d.js",
+    "static/js/453.4fe3a3cc.chunk.js": "/rkiran16/3d/static/js/453.4fe3a3cc.chunk.js",
+    "static/media/8k_earth_clouds.jpg": "/rkiran16/3d/static/media/8k_earth_clouds.08fcd80007fae8fc7170.jpg",
+    "static/media/8k_earth_daymap.jpg": "/rkiran16/3d/static/media/8k_earth_daymap.54672c1f3ba121d80470.jpg",
+    "static/media/8k_earth_specular_map.jpg": "/rkiran16/3d/static/media/8k_earth_specular_map.7b4efa59933b470e3776.jpg",
+    "static/media/8k_earth_normal_map.jpg": "/rkiran16/3d/static/media/8k_earth_normal_map.930cf2e99bc548140c29.jpg",
+    "index.html": "/rkiran16/3d/index.html",
+    "main.9a6bd019.css.map": "/rkiran16/3d/static/css/main.9a6bd019.css.map",
+    "main.2793496d.js.map": "/rkiran16/3d/static/js/main.2793496d.js.map",
+    "453.4fe3a3cc.chunk.js.map": "/rkiran16/3d/static/js/453.4fe3a3cc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9a6bd019.css",
+    "static/js/main.2793496d.js"
+  ]
+}
