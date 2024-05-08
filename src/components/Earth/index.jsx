@@ -8,7 +8,7 @@ import EarthSpecularMap from '../../assets/textures/8k_earth_specular_map.jpg';
 import EarthCloudsMap from '../../assets/textures/8k_earth_clouds.jpg';
 
 import { DoubleSide, TextureLoader } from 'three';
-import { Stars } from '@react-three/drei';
+import Scene from '../Scene';
 
 
 const Earth = () => {
@@ -28,17 +28,7 @@ const Earth = () => {
       });
     
       return (
-        <>
-         <ambientLight intensity={1.2} />
-         <directionalLight color="#FDB813" position={[0, 0, 5]} />
-          <Stars
-            radius={300}
-            depth={60}
-            count={20000}
-            factor={7}
-            saturation={0}
-            fade={true}
-          />
+        <Scene>
           <mesh ref={cloudsRef} position={[0, 0, 3]}>
             <sphereGeometry args={[1.005, 32, 32]} />
             <meshPhongMaterial
@@ -59,7 +49,7 @@ const Earth = () => {
               roughness={0.7}
             />
           </mesh>
-        </>
+        </Scene>
       );
 }
 
