@@ -1,6 +1,6 @@
 import './App.css';
 import { Suspense, useEffect, useState } from 'react';
-
+import ReactLoading from 'react-loading';
 import { Canvas } from '@react-three/fiber';
 
 import Mercury from '../src/assets/textures/8k_mercury.jpg';
@@ -34,7 +34,13 @@ function App() {
 
   useEffect(() => {
     getPlanet(planet)
-      .then((data) => setPlanetInfo(data[0]))
+      .then((data) => {
+        if (data && data.length > 0) {
+          setPlanetInfo(data[0]);
+        } else {
+          setPlanetInfo({});
+        }
+      })
       .catch((err) => console.log(err));
   }, [planet]);
 
@@ -93,9 +99,13 @@ function App() {
         </div>
       )}
 
-      <Canvas>
-        <Suspense fallback={null}>{renderPlanet()}</Suspense>
-      </Canvas>
+      <Suspense
+        fallback={
+          <ReactLoading type="bars" height={'20%'} width={'20%'} />
+        }
+      >
+        <Canvas>{renderPlanet()}</Canvas>
+      </Suspense>
     </>
   );
 }
