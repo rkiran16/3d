@@ -9,11 +9,11 @@
      height: 100%;
      margin: 0;
      padding: 0;
+     position: relative;
   }
   
   body {
      background-color: #010813ea;
-     position: relative;
   }
 
   .custom-select {
@@ -87,4 +87,14 @@ dt {
 dd {
   margin: 0;
   grid-column-start: 2;
+}
+
+.loading {
+   display: flex;
+   justify-content: center;
+   position: absolute;
+   width: 100%;
+   top: 50%;
+   left:-50%;
+   transform: translate(50%, -50%);
 }

@@ -101,7 +101,9 @@ function App() {
 
       <Suspense
         fallback={
-          <ReactLoading type="bars" height={'20%'} width={'20%'} />
+          <div className="loading">
+            <ReactLoading type="bars" height={'10%'} width={'10%'} />
+          </div>
         }
       >
         <Canvas>{renderPlanet()}</Canvas>
